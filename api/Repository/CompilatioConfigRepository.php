@@ -1,8 +1,8 @@
 <?php
-namespace APP\plugins\generic\compilatio\api\Repository;
+namespace APP\plugins\generic\letimio\api\Repository;
 
-use APP\plugins\generic\compilatio\api\Client\CompilatioClient;
-use APP\plugins\generic\compilatio\api\Client\CompilatioResponse;
+use APP\plugins\generic\letimio\api\Client\CompilatioClient;
+use APP\plugins\generic\letimio\api\Client\CompilatioResponse;
 use GuzzleHttp\Client;
 use RuntimeException;
 

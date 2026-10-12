@@ -1,6 +1,6 @@
 <?php
 
-namespace APP\plugins\generic\compilatio\api\Client;
+namespace APP\plugins\generic\letimio\api\Client;
 
 use RuntimeException;
 

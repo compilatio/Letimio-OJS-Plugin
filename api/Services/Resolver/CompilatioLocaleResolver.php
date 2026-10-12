@@ -1,8 +1,8 @@
 <?php
 
-namespace APP\plugins\generic\compilatio\api\Services\Resolver;
+namespace APP\plugins\generic\letimio\api\Services\Resolver;
 
-use APP\plugins\generic\compilatio\api\Repository\CompilatioConfigRepository;
+use APP\plugins\generic\letimio\api\Repository\CompilatioConfigRepository;
 use PKP\facades\Locale;
 
 final class CompilatioLocaleResolver

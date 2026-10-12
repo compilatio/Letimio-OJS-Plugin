@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace APP\plugins\generic\compilatio\api\test\Services\Resolver;
+namespace APP\plugins\generic\letimio\api\test\Services\Resolver;
 
-use APP\plugins\generic\compilatio\api\DTO\Document;
-use APP\plugins\generic\compilatio\api\Services\Resolver\CompilatioDocumentStatusResolver;
+use APP\plugins\generic\letimio\api\DTO\Document;
+use APP\plugins\generic\letimio\api\Services\Resolver\CompilatioDocumentStatusResolver;
 use PHPUnit\Framework\TestCase;
 use RuntimeException;
 

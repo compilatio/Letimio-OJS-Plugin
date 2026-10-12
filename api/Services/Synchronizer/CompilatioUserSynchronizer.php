@@ -1,8 +1,8 @@
 <?php
-namespace APP\plugins\generic\compilatio\api\Services\Synchronizer;
+namespace APP\plugins\generic\letimio\api\Services\Synchronizer;
 
-use APP\plugins\generic\compilatio\api\Repository\CompilatioUserRepository;
-use APP\plugins\generic\compilatio\api\Services\Resolver\CompilatioLocaleResolver;
+use APP\plugins\generic\letimio\api\Repository\CompilatioUserRepository;
+use APP\plugins\generic\letimio\api\Services\Resolver\CompilatioLocaleResolver;
 use PKP\user\User;
 use RuntimeException;
 

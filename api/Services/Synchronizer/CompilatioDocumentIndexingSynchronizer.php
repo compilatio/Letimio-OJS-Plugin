@@ -1,9 +1,9 @@
 <?php
 
-namespace APP\plugins\generic\compilatio\api\Services\Synchronizer;
+namespace APP\plugins\generic\letimio\api\Services\Synchronizer;
 
-use APP\plugins\generic\compilatio\api\Repository\CompilatioDocumentRepository;
-use APP\plugins\generic\compilatio\api\Repository\CompilatioDocumentStore;
+use APP\plugins\generic\letimio\api\Repository\CompilatioDocumentRepository;
+use APP\plugins\generic\letimio\api\Repository\CompilatioDocumentStore;
 use RuntimeException;
 
 final class CompilatioDocumentIndexingSynchronizer

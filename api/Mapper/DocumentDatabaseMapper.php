@@ -1,8 +1,8 @@
 <?php
 
-namespace APP\plugins\generic\compilatio\api\Mapper;
+namespace APP\plugins\generic\letimio\api\Mapper;
 
-use APP\plugins\generic\compilatio\api\DTO\Document;
+use APP\plugins\generic\letimio\api\DTO\Document;
 use RuntimeException;
 
 /**

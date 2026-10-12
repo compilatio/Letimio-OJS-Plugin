@@ -3,7 +3,7 @@ parameters:
 
     paths:
         - api
-        - CompilatioPlugin.php
+        - LetimioPlugin.php
 
     bootstrapFiles:
         - phpstan-bootstrap.php

@@ -1,6 +1,6 @@
 <?php
 
-namespace APP\plugins\generic\compilatio\api\Services\Resolver;
+namespace APP\plugins\generic\letimio\api\Services\Resolver;
 
 final class CompilatioThresholdsResolver
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace APP\plugins\generic\compilatio\api\Services\Handler;
+namespace APP\plugins\generic\letimio\api\Services\Handler;
 
-use APP\plugins\generic\compilatio\api\DTO\Analysis;
-use APP\plugins\generic\compilatio\api\DTO\Document;
-use APP\plugins\generic\compilatio\api\Repository\CompilatioDocumentRepository;
-use APP\plugins\generic\compilatio\api\Repository\CompilatioDocumentStore;
+use APP\plugins\generic\letimio\api\DTO\Analysis;
+use APP\plugins\generic\letimio\api\DTO\Document;
+use APP\plugins\generic\letimio\api\Repository\CompilatioDocumentRepository;
+use APP\plugins\generic\letimio\api\Repository\CompilatioDocumentStore;
 use RuntimeException;
 
 final class DocumentAnalysisHandler

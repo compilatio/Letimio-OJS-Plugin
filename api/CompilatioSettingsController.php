@@ -1,18 +1,18 @@
 <?php
 
-namespace APP\plugins\generic\compilatio\api;
+namespace APP\plugins\generic\letimio\api;
 
-use APP\plugins\generic\compilatio\api\CompilatioSettingsRequest;
-use APP\plugins\generic\compilatio\api\DTO\CompilatioFolderConfiguration;
-use APP\plugins\generic\compilatio\api\Factory\CompilatioFolderRepositoryFactory;
-use APP\plugins\generic\compilatio\api\Repository\CompilatioConfigRepository;
-use APP\plugins\generic\compilatio\api\Repository\CompilatioUserRepository;
-use APP\plugins\generic\compilatio\api\Services\Resolver\CompilatioBundleSettingsResolver;
-use APP\plugins\generic\compilatio\api\Services\Resolver\CompilatioLocaleResolver;
-use APP\plugins\generic\compilatio\api\Services\Initializer\CompilatioPrimaryUserInitializer;
-use APP\plugins\generic\compilatio\api\Services\Synchronizer\CompilatioFolderSynchronizer;
-use APP\plugins\generic\compilatio\api\Services\Synchronizer\CompilatioUserSynchronizer;
-use APP\plugins\generic\compilatio\api\Services\Resolver\CompilatioThresholdsResolver;
+use APP\plugins\generic\letimio\api\CompilatioSettingsRequest;
+use APP\plugins\generic\letimio\api\DTO\CompilatioFolderConfiguration;
+use APP\plugins\generic\letimio\api\Factory\CompilatioFolderRepositoryFactory;
+use APP\plugins\generic\letimio\api\Repository\CompilatioConfigRepository;
+use APP\plugins\generic\letimio\api\Repository\CompilatioUserRepository;
+use APP\plugins\generic\letimio\api\Services\Resolver\CompilatioBundleSettingsResolver;
+use APP\plugins\generic\letimio\api\Services\Resolver\CompilatioLocaleResolver;
+use APP\plugins\generic\letimio\api\Services\Initializer\CompilatioPrimaryUserInitializer;
+use APP\plugins\generic\letimio\api\Services\Synchronizer\CompilatioFolderSynchronizer;
+use APP\plugins\generic\letimio\api\Services\Synchronizer\CompilatioUserSynchronizer;
+use APP\plugins\generic\letimio\api\Services\Resolver\CompilatioThresholdsResolver;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use PKP\plugins\PluginSettingsController;
@@ -31,7 +31,7 @@ class CompilatioSettingsController extends PluginSettingsController
 
     public function getHandlerPath(): string
     {
-        return 'plugins/compilatio/settings';
+        return 'plugins/letimio/settings';
     }
 
     public function get(Request $illuminateRequest): JsonResponse

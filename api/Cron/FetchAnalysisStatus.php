@@ -1,13 +1,13 @@
 <?php
 
-namespace APP\plugins\generic\compilatio\api\Cron;
+namespace APP\plugins\generic\letimio\api\Cron;
 
-use APP\plugins\generic\compilatio\api\Client\CompilatioClient;
-use APP\plugins\generic\compilatio\api\DTO\Document;
-use APP\plugins\generic\compilatio\api\Repository\CompilatioDocumentRepository;
-use APP\plugins\generic\compilatio\api\Repository\CompilatioDocumentStore;
-use APP\plugins\generic\compilatio\api\Services\Resolver\CompilatioDocumentStatusResolver;
-use APP\plugins\generic\compilatio\CompilatioPlugin;
+use APP\plugins\generic\letimio\api\Client\CompilatioClient;
+use APP\plugins\generic\letimio\api\DTO\Document;
+use APP\plugins\generic\letimio\api\Repository\CompilatioDocumentRepository;
+use APP\plugins\generic\letimio\api\Repository\CompilatioDocumentStore;
+use APP\plugins\generic\letimio\api\Services\Resolver\CompilatioDocumentStatusResolver;
+use APP\plugins\generic\letimio\LetimioPlugin;
 use GuzzleHttp\Client;
 use PKP\scheduledTask\ScheduledTask;
 use PKP\scheduledTask\ScheduledTaskHelper;
@@ -21,7 +21,7 @@ final class FetchAnalysisStatus extends ScheduledTask
     /** @var array<int, CompilatioDocumentRepository> */
     private array $repositories = [];
 
-    public function __construct(private readonly CompilatioPlugin $plugin)
+    public function __construct(private readonly LetimioPlugin $plugin)
     {
         parent::__construct();
     }

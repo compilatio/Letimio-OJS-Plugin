@@ -1,10 +1,10 @@
 <?php
 
-namespace APP\plugins\generic\compilatio\api\Class;
+namespace APP\plugins\generic\letimio\api\Class;
 
-use APP\plugins\generic\compilatio\api\DTO\CompilatioManagedBundle;
-use APP\plugins\generic\compilatio\api\DTO\CompilatioDetection;
-use APP\plugins\generic\compilatio\api\DTO\CompilatioUser;
+use APP\plugins\generic\letimio\api\DTO\CompilatioManagedBundle;
+use APP\plugins\generic\letimio\api\DTO\CompilatioDetection;
+use APP\plugins\generic\letimio\api\DTO\CompilatioUser;
 
 class Bundle
 {

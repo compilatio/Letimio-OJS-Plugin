@@ -1,8 +1,8 @@
 <?php
 
-namespace APP\plugins\generic\compilatio\api\Services\Resolver;
+namespace APP\plugins\generic\letimio\api\Services\Resolver;
 
-use APP\plugins\generic\compilatio\api\DTO\Document;
+use APP\plugins\generic\letimio\api\DTO\Document;
 use Throwable;
 
 final class CompilatioDocumentStatusResolver

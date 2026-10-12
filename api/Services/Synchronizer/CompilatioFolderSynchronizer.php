@@ -1,9 +1,9 @@
 <?php
 
-namespace APP\plugins\generic\compilatio\api\Services\Synchronizer;
+namespace APP\plugins\generic\letimio\api\Services\Synchronizer;
 
-use APP\plugins\generic\compilatio\api\DTO\CompilatioFolderConfiguration;
-use APP\plugins\generic\compilatio\api\Repository\CompilatioFolderRepository;
+use APP\plugins\generic\letimio\api\DTO\CompilatioFolderConfiguration;
+use APP\plugins\generic\letimio\api\Repository\CompilatioFolderRepository;
 use RuntimeException;
 
 final class CompilatioFolderSynchronizer

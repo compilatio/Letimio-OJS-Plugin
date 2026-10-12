@@ -1,8 +1,8 @@
 <?php
 
-namespace APP\plugins\generic\compilatio\api\DTO;
+namespace APP\plugins\generic\letimio\api\DTO;
 
-use APP\plugins\generic\compilatio\api\DTO\DocumentAuthor;
+use APP\plugins\generic\letimio\api\DTO\DocumentAuthor;
 
 final readonly class Document
 {

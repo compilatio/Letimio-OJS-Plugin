@@ -1,6 +1,6 @@
 <?php
 
-namespace APP\plugins\generic\compilatio\api\Exception;
+namespace APP\plugins\generic\letimio\api\Exception;
 
 use RuntimeException;
 use Throwable;

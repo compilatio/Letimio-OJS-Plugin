@@ -1,8 +1,8 @@
 <?php
 
-namespace APP\plugins\generic\compilatio\api\Services\Initializer;
+namespace APP\plugins\generic\letimio\api\Services\Initializer;
 
-use APP\plugins\generic\compilatio\api\Services\Synchronizer\CompilatioUserSynchronizer;
+use APP\plugins\generic\letimio\api\Services\Synchronizer\CompilatioUserSynchronizer;
 use PKP\plugins\Plugin;
 use PKP\user\User;
 use RuntimeException;

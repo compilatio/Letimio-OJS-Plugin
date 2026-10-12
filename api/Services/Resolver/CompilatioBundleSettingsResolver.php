@@ -1,10 +1,10 @@
 <?php
 
-namespace APP\plugins\generic\compilatio\api\Services\Resolver;
+namespace APP\plugins\generic\letimio\api\Services\Resolver;
 
-use APP\plugins\generic\compilatio\api\Class\Bundle;
-use APP\plugins\generic\compilatio\api\DTO\CompilatioBundleSettings;
-use APP\plugins\generic\compilatio\api\DTO\CompilatioUser;
+use APP\plugins\generic\letimio\api\Class\Bundle;
+use APP\plugins\generic\letimio\api\DTO\CompilatioBundleSettings;
+use APP\plugins\generic\letimio\api\DTO\CompilatioUser;
 
 final class CompilatioBundleSettingsResolver
 {

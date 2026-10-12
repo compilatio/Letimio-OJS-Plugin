@@ -1,6 +1,6 @@
 <?php
 
-namespace APP\plugins\generic\compilatio\api\Services\Logging;
+namespace APP\plugins\generic\letimio\api\Services\Logging;
 
 use Illuminate\Support\Facades\Log;
 use Throwable;

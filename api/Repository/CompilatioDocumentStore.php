@@ -1,10 +1,10 @@
 <?php
 
-namespace APP\plugins\generic\compilatio\api\Repository;
+namespace APP\plugins\generic\letimio\api\Repository;
 
-use APP\plugins\generic\compilatio\api\DTO\CompilatioDocument;
-use APP\plugins\generic\compilatio\api\DTO\Document;
-use APP\plugins\generic\compilatio\api\Mapper\DocumentDatabaseMapper;
+use APP\plugins\generic\letimio\api\DTO\CompilatioDocument;
+use APP\plugins\generic\letimio\api\DTO\Document;
+use APP\plugins\generic\letimio\api\Mapper\DocumentDatabaseMapper;
 use Illuminate\Support\Facades\DB;
 
 final class CompilatioDocumentStore

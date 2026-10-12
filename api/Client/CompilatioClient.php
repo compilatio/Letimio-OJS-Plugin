@@ -1,8 +1,8 @@
 <?php
 
-namespace APP\plugins\generic\compilatio\api\Client;
+namespace APP\plugins\generic\letimio\api\Client;
 
-use APP\plugins\generic\compilatio\api\DTO\CompilatioResponse;
+use APP\plugins\generic\letimio\api\DTO\CompilatioResponse;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Exception\RequestException;

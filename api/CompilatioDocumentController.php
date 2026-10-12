@@ -1,16 +1,16 @@
 <?php
 
-namespace APP\plugins\generic\compilatio\api;
+namespace APP\plugins\generic\letimio\api;
 
 use APP\facades\Repo;
-use APP\plugins\generic\compilatio\api\Client\CompilatioClient;
-use APP\plugins\generic\compilatio\api\DTO\Document;
-use APP\plugins\generic\compilatio\api\Repository\CompilatioDocumentRepository;
-use APP\plugins\generic\compilatio\api\Repository\CompilatioDocumentStore;
-use APP\plugins\generic\compilatio\api\Services\Handler\DocumentAnalysisHandler;
-use APP\plugins\generic\compilatio\api\Services\Handler\DocumentSubmissionHandler;
-use APP\plugins\generic\compilatio\api\Services\Logging\CompilatioOjsLogger;
-use APP\plugins\generic\compilatio\api\Services\Synchronizer\CompilatioDocumentIndexingSynchronizer;
+use APP\plugins\generic\letimio\api\Client\CompilatioClient;
+use APP\plugins\generic\letimio\api\DTO\Document;
+use APP\plugins\generic\letimio\api\Repository\CompilatioDocumentRepository;
+use APP\plugins\generic\letimio\api\Repository\CompilatioDocumentStore;
+use APP\plugins\generic\letimio\api\Services\Handler\DocumentAnalysisHandler;
+use APP\plugins\generic\letimio\api\Services\Handler\DocumentSubmissionHandler;
+use APP\plugins\generic\letimio\api\Services\Logging\CompilatioOjsLogger;
+use APP\plugins\generic\letimio\api\Services\Synchronizer\CompilatioDocumentIndexingSynchronizer;
 use GuzzleHttp\Client;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -27,7 +27,7 @@ final class CompilatioDocumentController extends PKPBaseController
 
     public function getHandlerPath(): string
     {
-        return 'plugins/compilatio/documents';
+        return 'plugins/letimio/documents';
     }
 
     /**

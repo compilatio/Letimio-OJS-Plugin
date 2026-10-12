@@ -1,12 +1,12 @@
 <?php
-namespace APP\plugins\generic\compilatio\api\Repository;
+namespace APP\plugins\generic\letimio\api\Repository;
 
-use APP\plugins\generic\compilatio\api\Client\CompilatioClient;
-use APP\plugins\generic\compilatio\api\Client\CompilatioResponse;
-use APP\plugins\generic\compilatio\api\DTO\CompilatioBundleAccess;
-use APP\plugins\generic\compilatio\api\DTO\CompilatioDetection;
-use APP\plugins\generic\compilatio\api\DTO\CompilatioManagedBundle;
-use APP\plugins\generic\compilatio\api\DTO\CompilatioUser;
+use APP\plugins\generic\letimio\api\Client\CompilatioClient;
+use APP\plugins\generic\letimio\api\Client\CompilatioResponse;
+use APP\plugins\generic\letimio\api\DTO\CompilatioBundleAccess;
+use APP\plugins\generic\letimio\api\DTO\CompilatioDetection;
+use APP\plugins\generic\letimio\api\DTO\CompilatioManagedBundle;
+use APP\plugins\generic\letimio\api\DTO\CompilatioUser;
 use RuntimeException;
 
 class CompilatioUserRepository

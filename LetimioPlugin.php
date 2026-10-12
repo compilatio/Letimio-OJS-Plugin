@@ -1,17 +1,17 @@
 <?php
 
-namespace APP\plugins\generic\compilatio;
+namespace APP\plugins\generic\letimio;
 
 use APP\core\Application;
-use APP\plugins\generic\compilatio\api\Services\Resolver\CompilatioThresholdsResolver;
+use APP\plugins\generic\letimio\api\Services\Resolver\CompilatioThresholdsResolver;
 use APP\facades\Repo;
-use APP\plugins\generic\compilatio\api\Cron\FetchAnalysisStatus;
-use APP\plugins\generic\compilatio\api\CompilatioSettingsController;
-use APP\plugins\generic\compilatio\api\CompilatioDocumentController;
-use APP\plugins\generic\compilatio\api\Services\Handler\DocumentSubmissionHandler;
-use APP\plugins\generic\compilatio\api\Services\Handler\DocumentDeletionHandler;
-use APP\plugins\generic\compilatio\api\Services\Logging\CompilatioOjsLogger;
-use APP\plugins\generic\compilatio\migration\CompilatioSchemaMigration;
+use APP\plugins\generic\letimio\api\Cron\FetchAnalysisStatus;
+use APP\plugins\generic\letimio\api\CompilatioSettingsController;
+use APP\plugins\generic\letimio\api\CompilatioDocumentController;
+use APP\plugins\generic\letimio\api\Services\Handler\DocumentSubmissionHandler;
+use APP\plugins\generic\letimio\api\Services\Handler\DocumentDeletionHandler;
+use APP\plugins\generic\letimio\api\Services\Logging\CompilatioOjsLogger;
+use APP\plugins\generic\letimio\migration\CompilatioSchemaMigration;
 use APP\template\TemplateManager;
 use Illuminate\Support\Facades\Event;
 use PKP\core\APIRouter;
@@ -29,7 +29,7 @@ use PKP\submissionFile\SubmissionFile;
 use PKP\template\PKPTemplateManager;
 use PKP\user\User;
 
-class CompilatioPlugin extends GenericPlugin implements HasTaskScheduler
+class LetimioPlugin extends GenericPlugin implements HasTaskScheduler
 {
 
     private const PLUGIN_NAME = 'Compilatio';
@@ -141,7 +141,7 @@ class CompilatioPlugin extends GenericPlugin implements HasTaskScheduler
                 $request,
                 Application::ROUTE_API,
                 $context->getPath(),
-                'plugins/compilatio/settings'
+                'plugins/letimio/settings'
             ),
             'compilatioCsrfToken' => $request->getSession()->token(),
         ]);
@@ -189,7 +189,7 @@ class CompilatioPlugin extends GenericPlugin implements HasTaskScheduler
             $request,
             Application::ROUTE_API,
             $context->getPath(),
-            'plugins/compilatio/documents',
+            'plugins/letimio/documents',
         );
 
         $product = include __DIR__ . '/config/product.php';

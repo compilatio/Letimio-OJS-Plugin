@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace APP\plugins\generic\compilatio\api\test\DTO;
+namespace APP\plugins\generic\letimio\api\test\DTO;
 
-use APP\plugins\generic\compilatio\api\DTO\CompilatioDocument;
+use APP\plugins\generic\letimio\api\DTO\CompilatioDocument;
 use PHPUnit\Framework\TestCase;
 use RuntimeException;
 

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace APP\plugins\generic\compilatio\api\test\Class;
+namespace APP\plugins\generic\letimio\api\test\Class;
 
-use APP\plugins\generic\compilatio\api\Class\Bundle;
-use APP\plugins\generic\compilatio\api\DTO\CompilatioBundleAccess;
-use APP\plugins\generic\compilatio\api\DTO\CompilatioDetection;
-use APP\plugins\generic\compilatio\api\DTO\CompilatioManagedBundle;
-use APP\plugins\generic\compilatio\api\DTO\CompilatioUser;
+use APP\plugins\generic\letimio\api\Class\Bundle;
+use APP\plugins\generic\letimio\api\DTO\CompilatioBundleAccess;
+use APP\plugins\generic\letimio\api\DTO\CompilatioDetection;
+use APP\plugins\generic\letimio\api\DTO\CompilatioManagedBundle;
+use APP\plugins\generic\letimio\api\DTO\CompilatioUser;
 use PHPUnit\Framework\TestCase;
 
 final class BundleTest extends TestCase

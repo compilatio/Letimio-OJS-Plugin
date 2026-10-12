@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace APP\plugins\generic\compilatio\api\test\Repository;
+namespace APP\plugins\generic\letimio\api\test\Repository;
 
-use APP\plugins\generic\compilatio\api\Client\CompilatioClient;
-use APP\plugins\generic\compilatio\api\DTO\CompilatioFolderConfiguration;
-use APP\plugins\generic\compilatio\api\Repository\CompilatioFolderRepository;
+use APP\plugins\generic\letimio\api\Client\CompilatioClient;
+use APP\plugins\generic\letimio\api\DTO\CompilatioFolderConfiguration;
+use APP\plugins\generic\letimio\api\Repository\CompilatioFolderRepository;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 

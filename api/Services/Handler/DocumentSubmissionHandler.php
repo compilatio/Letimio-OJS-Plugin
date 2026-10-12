@@ -1,15 +1,15 @@
 <?php
 
-namespace APP\plugins\generic\compilatio\api\Services\Handler;
+namespace APP\plugins\generic\letimio\api\Services\Handler;
 
 use APP\facades\Repo;
-use APP\plugins\generic\compilatio\api\Client\CompilatioClient;
-use APP\plugins\generic\compilatio\api\DTO\Document;
-use APP\plugins\generic\compilatio\api\DTO\DocumentAuthor;
-use APP\plugins\generic\compilatio\api\Exception\CompilatioDocumentUploadException;
-use APP\plugins\generic\compilatio\api\Repository\CompilatioDocumentRepository;
-use APP\plugins\generic\compilatio\api\Repository\CompilatioDocumentStore;
-use APP\plugins\generic\compilatio\api\Services\Logging\CompilatioOjsLogger;
+use APP\plugins\generic\letimio\api\Client\CompilatioClient;
+use APP\plugins\generic\letimio\api\DTO\Document;
+use APP\plugins\generic\letimio\api\DTO\DocumentAuthor;
+use APP\plugins\generic\letimio\api\Exception\CompilatioDocumentUploadException;
+use APP\plugins\generic\letimio\api\Repository\CompilatioDocumentRepository;
+use APP\plugins\generic\letimio\api\Repository\CompilatioDocumentStore;
+use APP\plugins\generic\letimio\api\Services\Logging\CompilatioOjsLogger;
 use APP\submission\Submission;
 use GuzzleHttp\Client;
 use PKP\author\Author;

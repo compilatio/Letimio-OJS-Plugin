@@ -1,6 +1,6 @@
 <?php
 
-namespace APP\plugins\generic\compilatio\api;
+namespace APP\plugins\generic\letimio\api;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;

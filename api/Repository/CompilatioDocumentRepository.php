@@ -1,16 +1,16 @@
 <?php
 
-namespace APP\plugins\generic\compilatio\api\Repository;
+namespace APP\plugins\generic\letimio\api\Repository;
 
-use APP\plugins\generic\compilatio\api\Client\CompilatioClient;
-use APP\plugins\generic\compilatio\api\Client\CompilatioResponse as CompilatioResponseReader;
-use APP\plugins\generic\compilatio\api\DTO\Analysis;
-use APP\plugins\generic\compilatio\api\DTO\CompilatioDocument;
-use APP\plugins\generic\compilatio\api\DTO\Document;
-use APP\plugins\generic\compilatio\api\DTO\DocumentAuthor;
-use APP\plugins\generic\compilatio\api\DTO\DocumentUploadResult;
-use APP\plugins\generic\compilatio\api\Exception\CompilatioDocumentUploadException;
-use APP\plugins\generic\compilatio\api\Services\Resolver\CompilatioDocumentStatusResolver;
+use APP\plugins\generic\letimio\api\Client\CompilatioClient;
+use APP\plugins\generic\letimio\api\Client\CompilatioResponse as CompilatioResponseReader;
+use APP\plugins\generic\letimio\api\DTO\Analysis;
+use APP\plugins\generic\letimio\api\DTO\CompilatioDocument;
+use APP\plugins\generic\letimio\api\DTO\Document;
+use APP\plugins\generic\letimio\api\DTO\DocumentAuthor;
+use APP\plugins\generic\letimio\api\DTO\DocumentUploadResult;
+use APP\plugins\generic\letimio\api\Exception\CompilatioDocumentUploadException;
+use APP\plugins\generic\letimio\api\Services\Resolver\CompilatioDocumentStatusResolver;
 use PKP\services\PKPFileService;
 use RuntimeException;
 use Throwable;

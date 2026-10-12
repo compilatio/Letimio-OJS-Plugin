@@ -1,10 +1,10 @@
 <?php
 
-namespace APP\plugins\generic\compilatio\api\Repository;
+namespace APP\plugins\generic\letimio\api\Repository;
 
-use APP\plugins\generic\compilatio\api\Client\CompilatioClient;
-use APP\plugins\generic\compilatio\api\Client\CompilatioResponse;
-use APP\plugins\generic\compilatio\api\DTO\CompilatioFolderConfiguration;
+use APP\plugins\generic\letimio\api\Client\CompilatioClient;
+use APP\plugins\generic\letimio\api\Client\CompilatioResponse;
+use APP\plugins\generic\letimio\api\DTO\CompilatioFolderConfiguration;
 use RuntimeException;
 
 class CompilatioFolderRepository

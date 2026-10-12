@@ -1,6 +1,6 @@
 <?php
 
-namespace APP\plugins\generic\compilatio\api\DTO;
+namespace APP\plugins\generic\letimio\api\DTO;
 
 final class CompilatioFolderConfiguration
 {

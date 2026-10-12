@@ -1,9 +1,9 @@
 <?php
 
-namespace APP\plugins\generic\compilatio\api\Factory;
+namespace APP\plugins\generic\letimio\api\Factory;
 
-use APP\plugins\generic\compilatio\api\Client\CompilatioClient;
-use APP\plugins\generic\compilatio\api\Repository\CompilatioFolderRepository;
+use APP\plugins\generic\letimio\api\Client\CompilatioClient;
+use APP\plugins\generic\letimio\api\Repository\CompilatioFolderRepository;
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
 
