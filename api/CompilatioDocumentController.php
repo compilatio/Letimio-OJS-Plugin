@@ -164,7 +164,7 @@ final class CompilatioDocumentController extends PKPBaseController
 
             $indexed = $request->input('indexed');
             if (!is_bool($indexed)) {
-                $message = __('plugins.generic.compilatio.documents.invalidIndexed');
+                $message = __('plugins.generic.letimio.documents.invalidIndexed');
                 throw new RuntimeException(
                     is_string($message) ? $message : 'The indexed value must be a boolean.',
                     422,
@@ -172,7 +172,7 @@ final class CompilatioDocumentController extends PKPBaseController
             }
 
             if (empty($document->externalId) || Document::STATUS_ERROR_DELETE === $document->status) {
-                $message = __('plugins.generic.compilatio.documents.indexingUnavailable');
+                $message = __('plugins.generic.letimio.documents.indexingUnavailable');
                 throw new RuntimeException(
                     is_string($message) ? $message : 'Indexing is not available for this document.',
                     409,
@@ -303,7 +303,7 @@ final class CompilatioDocumentController extends PKPBaseController
             ? $status
             : 'not_sent';
 
-        $label = __('plugins.generic.compilatio.documents.' . $key);
+        $label = __('plugins.generic.letimio.documents.' . $key);
 
         return is_string($label) ? $label : $key;
     }

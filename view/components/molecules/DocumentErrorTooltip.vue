@@ -10,7 +10,7 @@ const props = defineProps({
 const { t } = useI18n();
 const tooltipOpen = ref(false);
 const tooltipDismissed = ref(false);
-const tooltipId = computed(() => `compilatio-error-${props.documentId}`);
+const tooltipId = computed(() => `letimio-error-${props.documentId}`);
 
 function showTooltip() {
   tooltipDismissed.value = false;

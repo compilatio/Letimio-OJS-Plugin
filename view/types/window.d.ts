@@ -6,13 +6,13 @@ import type { CompilatioDocumentsApi, CompilatioDocumentsConfig } from './docume
 
 declare global {
   interface Window {
-    pkpCompilatioDocuments: CompilatioDocumentsConfig;
-    pkpCompilatioDocumentsApi: CompilatioDocumentsApi;
-    pkpCompilatioDocumentsTable: {
+    pkpLetimioDocuments: CompilatioDocumentsConfig;
+    pkpLetimioDocumentsApi: CompilatioDocumentsApi;
+    pkpLetimioDocumentsTable: {
       renderDocuments(documents: Map<number, CompilatioDocument>): void;
       unmountAll(): void;
     };
-    mountCompilatioDocumentApp?: (
+    mountLetimioDocumentApp?: (
       target: HTMLElement,
       document: CompilatioDocument,
       onUpdated: (document: CompilatioDocument) => void,
@@ -20,7 +20,7 @@ declare global {
       unmount(): void;
       update(document: CompilatioDocument): void;
     };
-    mountCompilatioSettingsApp?: (target: HTMLElement) => App;
+    mountLetimioSettingsApp?: (target: HTMLElement) => App;
     pkp: {
       currentUser?: { csrfToken: string };
       pkpCreateVueApp(component: Component): App;

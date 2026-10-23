@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\DB;
 
 final class CompilatioDocumentStore
 {
-    private const TABLE = 'compilatio_documents';
+    private const TABLE = 'letimio_documents';
 
     private readonly DocumentDatabaseMapper $documentMapper;
 

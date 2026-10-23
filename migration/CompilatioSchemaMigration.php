@@ -10,12 +10,12 @@ final class CompilatioSchemaMigration extends Migration
 {
     public function up(): void
     {
-        if (Schema::hasTable('compilatio_documents')) {
+        if (Schema::hasTable('letimio_documents')) {
             $this->upgradeExistingDocumentsTable();
             return;
         }
 
-        Schema::create('compilatio_documents', function (Blueprint $table): void {
+        Schema::create('letimio_documents', function (Blueprint $table): void {
             $table->bigIncrements('id');
             $table->bigInteger('context_id');
             $table->bigInteger('submission_id');
@@ -36,54 +36,12 @@ final class CompilatioSchemaMigration extends Migration
             $table->timestamp('created_at');
             $table->timestamp('updated_at');
 
-            $table->unique('submission_file_id', 'compilatio_documents_submission_file_unique');
-            $table->index('context_id', 'compilatio_documents_context_id');
-            $table->index('submission_id', 'compilatio_documents_submission_id');
-            $table->index('external_id', 'compilatio_documents_external_id');
-            $table->index('status', 'compilatio_documents_status');
+            $table->unique('submission_file_id', 'letimio_documents_submission_file_unique');
+            $table->index('context_id', 'letimio_documents_context_id');
+            $table->index('submission_id', 'letimio_documents_submission_id');
+            $table->index('external_id', 'letimio_documents_external_id');
+            $table->index('status', 'letimio_documents_status');
         });
-    }
-
-    private function upgradeExistingDocumentsTable(): void
-    {
-        if (!Schema::hasColumn('compilatio_documents', 'title')) {
-            Schema::table('compilatio_documents', function (Blueprint $table): void {
-                $table->text('title')->nullable();
-            });
-        }
-
-        if (!Schema::hasColumn('compilatio_documents', 'description')) {
-            Schema::table('compilatio_documents', function (Blueprint $table): void {
-                $table->text('description')->nullable();
-            });
-        }
-
-        if (!Schema::hasColumn('compilatio_documents', 'light_reports')) {
-            Schema::table('compilatio_documents', function (Blueprint $table): void {
-                $table->longText('light_reports')->nullable();
-            });
-        }
-
-        $obsoleteColumns = array_values(array_filter(
-            [
-                'global_score',
-                'similarity_score',
-                'similarity_quotation_score',
-                'ai_score',
-                'ignored_scores',
-            ],
-            static fn(string $column): bool =>
-            Schema::hasColumn('compilatio_documents', $column)
-        ));
-
-        if ($obsoleteColumns !== []) {
-            Schema::table(
-                'compilatio_documents',
-                static function (Blueprint $table) use ($obsoleteColumns): void {
-                    $table->dropColumn($obsoleteColumns);
-                }
-            );
-        }
     }
 
     public function down(): void

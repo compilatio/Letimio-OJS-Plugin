@@ -10,9 +10,9 @@ const props = defineProps({
 const { locale } = useI18n();
 
 const formattedScore = computed(() => {
-  const value = Number(props.score);
-  return null !== value && undefined !== value
-    ? String(Math.round(value)) + '%'
+  const score = props.score
+  return null !== score && undefined !== score
+    ? String(Math.round(Number(score))) + '%'
     : '';
 });
 
@@ -33,7 +33,7 @@ const scoreColor = computed(() => {
 
 <template>
   <span
-    class="compilatio-document-score whitespace-nowrap text-center text-xl font-bold"
+    class="letimio-document-score whitespace-nowrap text-center text-xl font-bold"
     :class="scoreColor"
   >
     {{ formattedScore }}

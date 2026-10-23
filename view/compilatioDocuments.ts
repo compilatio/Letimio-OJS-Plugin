@@ -6,19 +6,19 @@ import type { CompilatioDocument } from './types/document';
   let refreshTimer: number | undefined;
 
   function renderDocuments() {
-    window.pkpCompilatioDocumentsTable.renderDocuments(documentsByFileId);
+    window.pkpLetimioDocumentsTable.renderDocuments(documentsByFileId);
   }
 
   async function loadDocuments(submissionId: string) {
     try {
-      const documents = await window.pkpCompilatioDocumentsApi.getSubmissionDocuments(submissionId);
+      const documents = await window.pkpLetimioDocumentsApi.getSubmissionDocuments(submissionId);
       if (submissionId !== activeSubmissionId) {
         return;
       }
 
       documentsByFileId.clear();
       documents.forEach((document) => {
-        window.pkpCompilatioDocumentsApi.addActionUrls(document);
+        window.pkpLetimioDocumentsApi.addActionUrls(document);
         documentsByFileId.set(document.submissionFileId, document);
       });
       renderDocuments();
@@ -32,7 +32,7 @@ import type { CompilatioDocument } from './types/document';
   }
 
   function synchronizeSubmission() {
-    const config = window.pkpCompilatioDocumentsApi.getConfig();
+    const config = window.pkpLetimioDocumentsApi.getConfig();
     const submissionId = config?.apiUrl
       ? new URLSearchParams(window.location.search).get('workflowSubmissionId')
       : null;
@@ -43,7 +43,7 @@ import type { CompilatioDocument } from './types/document';
     }
 
     window.clearTimeout(refreshTimer);
-    window.pkpCompilatioDocumentsTable.unmountAll();
+    window.pkpLetimioDocumentsTable.unmountAll();
     activeSubmissionId = submissionId;
     documentsByFileId.clear();
     if (submissionId) {
@@ -52,7 +52,7 @@ import type { CompilatioDocument } from './types/document';
   }
 
   function initialize() {
-    window.addEventListener('compilatio:document-app-ready', renderDocuments);
+    window.addEventListener('letimio:document-app-ready', renderDocuments);
     new MutationObserver(synchronizeSubmission).observe(document.body, {
       childList: true,
       subtree: true,

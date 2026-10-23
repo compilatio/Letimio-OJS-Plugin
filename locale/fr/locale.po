@@ -3,50 +3,50 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language: fr\n"
 
-msgid "plugins.generic.compilatio.documents.sent"
+msgid "plugins.generic.letimio.documents.sent"
 msgstr "Prêt à analyser"
 
-msgid "plugins.generic.compilatio.documents.queue"
+msgid "plugins.generic.letimio.documents.queue"
 msgstr "Analyse en attente"
 
-msgid "plugins.generic.compilatio.documents.analysing"
+msgid "plugins.generic.letimio.documents.analysing"
 msgstr "Analyse en cours"
 
-msgid "plugins.generic.compilatio.documents.scored"
+msgid "plugins.generic.letimio.documents.scored"
 msgstr "Analyse terminée"
 
-msgid "plugins.generic.compilatio.documents.error_not_found"
+msgid "plugins.generic.letimio.documents.error_not_found"
 msgstr "Document introuvable"
 
-msgid "plugins.generic.compilatio.documents.error_too_short"
+msgid "plugins.generic.letimio.documents.error_too_short"
 msgstr "Document trop court"
 
-msgid "plugins.generic.compilatio.documents.error_too_large"
+msgid "plugins.generic.letimio.documents.error_too_large"
 msgstr "Document trop volumineux"
 
-msgid "plugins.generic.compilatio.documents.error_too_long"
+msgid "plugins.generic.letimio.documents.error_too_long"
 msgstr "Document trop long"
 
-msgid "plugins.generic.compilatio.documents.error_unsupported"
+msgid "plugins.generic.letimio.documents.error_unsupported"
 msgstr "Format non pris en charge"
 
-msgid "plugins.generic.compilatio.documents.error_extraction_failed"
+msgid "plugins.generic.letimio.documents.error_extraction_failed"
 msgstr "Échec de l’extraction"
 
-msgid "plugins.generic.compilatio.documents.error_analysis_failed"
+msgid "plugins.generic.letimio.documents.error_analysis_failed"
 msgstr "Échec de l’analyse"
 
-msgid "plugins.generic.compilatio.documents.error_sending_failed"
+msgid "plugins.generic.letimio.documents.error_sending_failed"
 msgstr "Échec de l’envoi"
 
-msgid "plugins.generic.compilatio.documents.error_delete"
+msgid "plugins.generic.letimio.documents.error_delete"
 msgstr "Échec de la suppression"
 
-msgid "plugins.generic.compilatio.documents.not_sent"
+msgid "plugins.generic.letimio.documents.not_sent"
 msgstr "Non envoyé"
 
-msgid "plugins.generic.compilatio.documents.invalidIndexed"
+msgid "plugins.generic.letimio.documents.invalidIndexed"
 msgstr "Le statut d’indexation doit être un booléen."
 
-msgid "plugins.generic.compilatio.documents.indexingUnavailable"
+msgid "plugins.generic.letimio.documents.indexingUnavailable"
 msgstr "L’indexation de ce document ne peut pas être modifiée."

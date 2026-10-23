@@ -20,7 +20,7 @@ export default defineConfig({
     emptyOutDir: false,
     lib: {
       entry: fileURLToPath(new URL('./view/PlagiarismPanel.entry.ts', import.meta.url)),
-      name: 'CompilatioPlagiarismPanelRuntime',
+      name: 'LetimioPlagiarismPanelRuntime',
       formats: ['iife'],
       fileName: () => 'PlagiarismPanel.runtime.js',
       cssFileName: 'style',

@@ -5,11 +5,11 @@ import fr from './locales/fr.js';
 
 (function () {
   function getConfig() {
-    return window.pkpCompilatioDocuments;
+    return window.pkpLetimioDocuments;
   }
 
   function addActionUrls(documentData: CompilatioDocument) {
-    const documentUrl = window.pkpCompilatioDocuments.apiUrl + '/' + documentData.submissionFileId;
+    const documentUrl = window.pkpLetimioDocuments.apiUrl + '/' + documentData.submissionFileId;
 
     documentData.retryUrl = documentUrl + '/retry';
     documentData.analyseUrl = documentUrl + '/analyse';
@@ -22,7 +22,7 @@ import fr from './locales/fr.js';
   async function getErrorMessage(response: Response) {
     const i18n = createI18n({
       legacy: false,
-      locale: window.pkpCompilatioDocuments.locale,
+      locale: window.pkpLetimioDocuments.locale,
       fallbackLocale: 'fr',
       messages: { en, fr },
     });
@@ -48,7 +48,7 @@ import fr from './locales/fr.js';
   }
 
   function getSubmissionDocuments(submissionId: string) {
-    const config = window.pkpCompilatioDocuments;
+    const config = window.pkpLetimioDocuments;
 
     return request(config.apiUrl + '/submission/' + encodeURIComponent(submissionId), {
       credentials: 'same-origin',
@@ -82,7 +82,7 @@ import fr from './locales/fr.js';
     });
   }
 
-  window.pkpCompilatioDocumentsApi = {
+  window.pkpLetimioDocumentsApi = {
     addActionUrls: addActionUrls,
     getConfig: getConfig,
     getSubmissionDocuments: getSubmissionDocuments,

@@ -137,13 +137,13 @@ class LetimioPlugin extends GenericPlugin implements HasTaskScheduler
 
         $templateMgr = TemplateManager::getManager($request);
         $templateMgr->assign([
-            'compilatioSettingsApiUrl' => $request->getDispatcher()->url(
+            'letimioSettingsApiUrl' => $request->getDispatcher()->url(
                 $request,
                 Application::ROUTE_API,
                 $context->getPath(),
                 'plugins/letimio/settings'
             ),
-            'compilatioCsrfToken' => $request->getSession()->token(),
+            'letimioCsrfToken' => $request->getSession()->token(),
         ]);
 
         return new JSONMessage(
@@ -195,8 +195,8 @@ class LetimioPlugin extends GenericPlugin implements HasTaskScheduler
         $product = include __DIR__ . '/config/product.php';
 
         $templateMgr->addJavaScript(
-            'compilatioDocumentsConfig',
-            'window.pkpCompilatioDocuments = '
+            'letimioDocumentsConfig',
+            'window.pkpLetimioDocuments = '
                 . json_encode([
                     'product' => $product,
                     'apiUrl' => $documentsApiUrl,
@@ -210,7 +210,7 @@ class LetimioPlugin extends GenericPlugin implements HasTaskScheduler
         );
 
         $templateMgr->addJavaScript(
-            'compilatioSettingsPanel',
+            'letimioSettingsPanel',
             $baseUrl . '/' . $pluginPath
                 . '/view/build/PlagiarismPanel.runtime.js?v='
                 .  filemtime($jsFile),
@@ -222,7 +222,7 @@ class LetimioPlugin extends GenericPlugin implements HasTaskScheduler
 
 
         $templateMgr->addStyleSheet(
-            'compilatioTailwind',
+            'letimioTailwind',
             $baseUrl . '/' . $pluginPath
                 . '/view/build/style.css?v='
                 . filemtime($cssFile),

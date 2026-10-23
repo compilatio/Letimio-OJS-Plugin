@@ -1,27 +1,27 @@
 <div
-	id="compilatioSettingsPanelRoot"
-	data-api-url="{$compilatioSettingsApiUrl|escape}"
-	data-csrf-token="{$compilatioCsrfToken|escape}"
+	id="letimioSettingsPanelRoot"
+	data-api-url="{$letimioSettingsApiUrl|escape}"
+	data-csrf-token="{$letimioCsrfToken|escape}"
 ></div>
 
 <script>
 	(function () {ldelim}
-		function mountCompilatioSettingsPanel() {ldelim}
-			var target = document.getElementById('compilatioSettingsPanelRoot');
+		function mountLetimioSettingsPanel() {ldelim}
+			var target = document.getElementById('letimioSettingsPanelRoot');
 
 			if (!target || 'true' === target.dataset.mounted) {ldelim}
 				return;
 			{rdelim}
 
-			if (!window.pkp || !window.pkp.pkpCreateVueApp || !window.mountCompilatioSettingsApp) {ldelim}
-				window.setTimeout(mountCompilatioSettingsPanel, 100);
+			if (!window.pkp || !window.pkp.pkpCreateVueApp || !window.mountLetimioSettingsApp) {ldelim}
+				window.setTimeout(mountLetimioSettingsPanel, 100);
 				return;
 			{rdelim}
 
-			window.mountCompilatioSettingsApp(target);
+			window.mountLetimioSettingsApp(target);
 			target.dataset.mounted = 'true';
 		{rdelim}
 
-		mountCompilatioSettingsPanel();
+		mountLetimioSettingsPanel();
 	{rdelim})();
 </script>

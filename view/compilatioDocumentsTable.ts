@@ -2,14 +2,14 @@ import type { CompilatioDocument } from "./types/document";
 
 (function () {
   const mountedApps = new Map<Element, {
-    app: ReturnType<NonNullable<Window['mountCompilatioDocumentApp']>>;
+    app: ReturnType<NonNullable<Window['mountLetimioDocumentApp']>>;
     fileId: number;
   }>();
   function addCompilatioHeader(row: HTMLTableRowElement) {
     const table = row.closest('table');
     const headerRow = table ? table.querySelector('thead tr') : null;
 
-    if (!headerRow || headerRow.querySelector('.compilatio-document-header')) {
+    if (!headerRow || headerRow.querySelector('.letimio-document-header')) {
       return;
     }
 
@@ -21,9 +21,9 @@ import type { CompilatioDocument } from "./types/document";
 
     const header = document.createElement('th');
     header.className = currentHeader.className;
-    header.classList.add('compilatio-document-header', 'w-52', 'min-w-52', 'text-start');
+    header.classList.add('letimio-document-header', 'w-52', 'min-w-52', 'text-start');
     header.scope = 'col';
-    header.textContent = window.pkpCompilatioDocuments?.product.name ?? 'Compilatio';
+    header.textContent = window.pkpLetimioDocuments?.product.name ?? 'Compilatio';
 
     headerRow.insertBefore(header, currentHeader);
   }
@@ -49,7 +49,7 @@ import type { CompilatioDocument } from "./types/document";
   }
 
   function getOrCreateCompilatioCell(row: HTMLTableRowElement, filenameCell: HTMLTableCellElement) {
-    const existingCell = row.querySelector('.compilatio-document-cell');
+    const existingCell = row.querySelector('.letimio-document-cell');
     if (existingCell) {
       return existingCell;
     }
@@ -57,7 +57,7 @@ import type { CompilatioDocument } from "./types/document";
     const dateCell = filenameCell.nextElementSibling;
     const cell = document.createElement('td');
     cell.className = dateCell ? dateCell.className : '';
-    cell.classList.add('compilatio-document-cell', 'w-52', 'min-w-52', 'text-start');
+    cell.classList.add('letimio-document-cell', 'w-52', 'min-w-52', 'text-start');
     row.insertBefore(cell, dateCell);
 
     return cell;
@@ -76,7 +76,7 @@ import type { CompilatioDocument } from "./types/document";
   function renderDocuments(documentsByFileId: Map<number, CompilatioDocument>) {
     cleanup(documentsByFileId);
 
-    const mountDocumentApp = window.mountCompilatioDocumentApp;
+    const mountDocumentApp = window.mountLetimioDocumentApp;
     if (!mountDocumentApp) {
       return;
     }
@@ -91,7 +91,7 @@ import type { CompilatioDocument } from "./types/document";
       addCompilatioHeader(fileRow.row);
 
       const cell = getOrCreateCompilatioCell(fileRow.row, fileRow.filenameCell);
-      const current = cell.querySelector('.compilatio-document-app');
+      const current = cell.querySelector('.letimio-document-app');
     
       if (current) {
         const existing = mountedApps.get(current);
@@ -110,7 +110,7 @@ import type { CompilatioDocument } from "./types/document";
       }
 
       const target = document.createElement('span');
-      target.className = 'compilatio-document-app';
+      target.className = 'letimio-document-app';
       cell.appendChild(target);
 
       const app = mountDocumentApp(target, documentData, function (updated) {
@@ -128,7 +128,7 @@ import type { CompilatioDocument } from "./types/document";
     mountedApps.clear();
   }
 
-  window.pkpCompilatioDocumentsTable = {
+  window.pkpLetimioDocumentsTable = {
     renderDocuments: renderDocuments,
     unmountAll: unmountAll,
   };
