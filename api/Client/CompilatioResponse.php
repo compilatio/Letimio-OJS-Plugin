@@ -1,5 +1,15 @@
 <?php
 
+/**
+ * @file plugins/generic/compilatio/api/Client/CompilatioResponse.php
+ *
+ * Copyright (c) 2026 Letimio
+ * Distributed under the GNU GPL v3 or later. For full terms see the file LICENSE.
+ *
+ * @class CompilatioResponse
+ * @brief Reads and validates Compilatio API response data.
+ */
+
 namespace APP\plugins\generic\letimio\api\Client;
 
 use RuntimeException;

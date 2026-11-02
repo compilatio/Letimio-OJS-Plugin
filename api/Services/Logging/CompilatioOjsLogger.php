@@ -1,5 +1,15 @@
 <?php
 
+/**
+ * @file plugins/generic/compilatio/api/Services/Logging/CompilatioOjsLogger.php
+ *
+ * Copyright (c) 2026 Letimio
+ * Distributed under the GNU GPL v3 or later. For full terms see the file LICENSE.
+ *
+ * @class CompilatioOjsLogger
+ * @brief Logs plugin events through OJS.
+ */
+
 namespace APP\plugins\generic\letimio\api\Services\Logging;
 
 use Illuminate\Support\Facades\Log;

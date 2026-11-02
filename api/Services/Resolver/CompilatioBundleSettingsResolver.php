@@ -1,5 +1,15 @@
 <?php
 
+/**
+ * @file plugins/generic/compilatio/api/Services/Resolver/CompilatioBundleSettingsResolver.php
+ *
+ * Copyright (c) 2026 Letimio
+ * Distributed under the GNU GPL v3 or later. For full terms see the file LICENSE.
+ *
+ * @class CompilatioBundleSettingsResolver
+ * @brief Resolves available subscription detection settings.
+ */
+
 namespace APP\plugins\generic\letimio\api\Services\Resolver;
 
 use APP\plugins\generic\letimio\api\Class\Bundle;

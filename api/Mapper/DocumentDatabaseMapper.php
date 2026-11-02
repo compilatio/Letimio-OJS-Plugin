@@ -1,5 +1,15 @@
 <?php
 
+/**
+ * @file plugins/generic/compilatio/api/Mapper/DocumentDatabaseMapper.php
+ *
+ * Copyright (c) 2026 Letimio
+ * Distributed under the GNU GPL v3 or later. For full terms see the file LICENSE.
+ *
+ * @class DocumentDatabaseMapper
+ * @brief Maps stored document records to document objects.
+ */
+
 namespace APP\plugins\generic\letimio\api\Mapper;
 
 use APP\plugins\generic\letimio\api\DTO\Document;

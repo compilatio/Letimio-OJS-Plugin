@@ -1,4 +1,14 @@
 <?php
+
+/**
+ * @file plugins/generic/compilatio/api/Repository/CompilatioUserRepository.php
+ *
+ * Copyright (c) 2026 Letimio
+ * Distributed under the GNU GPL v3 or later. For full terms see the file LICENSE.
+ *
+ * @class CompilatioUserRepository
+ * @brief Manages users through the Compilatio API.
+ */
 namespace APP\plugins\generic\letimio\api\Repository;
 
 use APP\plugins\generic\letimio\api\Client\CompilatioClient;
